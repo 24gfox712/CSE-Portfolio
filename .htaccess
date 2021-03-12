@@ -1,0 +1,3 @@
+order allow,deny
+deny from 3.236.187.72
+allow from all
