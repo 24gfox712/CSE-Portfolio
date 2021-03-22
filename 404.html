@@ -11,16 +11,21 @@ permalink: /404.html
     <style>
       
     </style>
+    <h6>
     <span style="color: red"><strong>Error:</strong> Page not found</span> - <br>
-    Redirecting you home in <span id="countdown">5</span> seconds
+      Redirecting you home in <span id="countdown">10</span> seconds</h6>
+    Click <button onClick="redir()">HERE</button> if you are not taken automatically.
+    
     <!-- JavaScript part -->
     <script type="text/javascript">
-        var seconds = 5;
+        var seconds = 10;
+        function redir() {
+          window.location = "https://24gfox712.github.io/CSE-Portfolio/";
+        }
         function countdown() {
             seconds = seconds - 1;
             if (seconds < 0) {
-                // Chnage your redirection link here
-                window.location = "https://24gfox712.github.io/CSE-Portfolio/";
+                redir()
             } else {
                 // Update remaining seconds
                 document.getElementById("countdown").innerHTML = seconds;
